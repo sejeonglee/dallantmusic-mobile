@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+
+.amplify-button[data-variation='primary'] {
+  background-color: #69702E;
+  color: white;
+  border-radius:  26px;
+  font-size: 14px;
+  height: 3rem;
+  margin-top:10%;
+}
+
+[data-amplify-authenticator]{
+  --amplify-components-authenticator-router-border-style : none;
+  --amplify-components-authenticator-router-box-shadow: none;
+  --amplify-components-button-hover-background-color: #f2f2f2;
+}
+
+[class*="amplify"].amplify-input {
+  --amplify-components-fieldcontrol-border-radius: 8px !important;
+  --amplify-components-fieldcontrol-border-style: none;
+  --amplify-components-fieldcontrol-font-size: 14px;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  background-color: #f2f2f2;
+  color:#ADADAD;
+  height:3rem;
+}
+
+[class*="amplify"].amplify-field__show-password {
+  --amplify-components-button-border-radius: 8px !important;
+  --amplify-components-button-border-style: none;
+  --amplify-components-button-font-size: 14px;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  background-color: #f2f2f2;
+  color:#ADADAD;
+}
