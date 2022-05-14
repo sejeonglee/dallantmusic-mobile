@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
-
 
 .amplify-button[data-variation='primary'] {
   background-color: #69702E;
@@ -14,6 +12,7 @@
   --amplify-components-authenticator-router-border-style : none;
   --amplify-components-authenticator-router-box-shadow: none;
   --amplify-components-button-hover-background-color: #f2f2f2;
+  --amplify-components-button-primary-hover-background-color: #3d411c;
 }
 
 [class*="amplify"].amplify-input {
@@ -22,7 +21,7 @@
   --amplify-components-fieldcontrol-font-size: 14px;
   font-family: 'IBM Plex Sans KR', sans-serif;
   background-color: #f2f2f2;
-  color:#ADADAD;
+  color:black;
   height:3rem;
 }
 
@@ -30,7 +29,5 @@
   --amplify-components-button-border-radius: 8px !important;
   --amplify-components-button-border-style: none;
   --amplify-components-button-font-size: 14px;
-  font-family: 'IBM Plex Sans KR', sans-serif;
   background-color: #f2f2f2;
-  color:#ADADAD;
 }
