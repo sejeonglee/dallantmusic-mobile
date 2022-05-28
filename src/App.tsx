@@ -1,12 +1,18 @@
 import React from 'react';
 import { I18n } from 'aws-amplify';
-import { View, Image, useAuthenticator, Button } from '@aws-amplify/ui-react';
+import {
+  View,
+  Image,
+  useAuthenticator,
+  Button,
+  Link,
+} from '@aws-amplify/ui-react';
+
+import { Link as ReactRouterLink } from 'react-router-dom';
 import logo from './logo.svg';
 import DallantMusicLogo from './dallant_logo.svg';
 import './App.css';
 import './login.css';
-
-// import { Amplify } from 'aws-amplify';
 
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -55,6 +61,13 @@ const components = {
           >
             Reset Password
           </Button>
+          <Link
+            as={ReactRouterLink}
+            to="/instructor"
+            onClick={() => (document.body.style.backgroundColor = '#69702E')}
+          >
+            Home
+          </Link>
         </View>
       );
     },
@@ -68,6 +81,7 @@ class App extends React.Component {
    * @return {JSX.Element}
    */
   render(): JSX.Element {
+    document.body.style.backgroundColor = 'white';
     return (
       <Authenticator components={components} hideSignUp={true}>
         <div className="App">

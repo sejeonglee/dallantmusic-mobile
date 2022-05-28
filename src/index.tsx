@@ -1,14 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Student from './routes/Student';
+import Instructor from './routes/Instructor';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="instructor" element={<Instructor />} />
+        <Route path="student" element={<Student />} />
+
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: '1rem' }}>
+              <p>There&apos;s nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root'),
 );
 
