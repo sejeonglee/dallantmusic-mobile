@@ -1,5 +1,7 @@
 import React from 'react';
 import './Instructor.css';
+import StudentCard from '../components/StudentCard';
+
 import { getStudents } from '../data';
 /**
  * 강사 페이지
@@ -7,12 +9,12 @@ import { getStudents } from '../data';
 class Instructor extends React.Component {
   /**
    *
-   * @return {JSX.Element}
+   * @return {JSX.Element} Instructor Menu Page
    */
   render(): JSX.Element {
     const instName = '이해정';
     // eslint-disable-next-line no-unused-vars
-    const students = getStudents();
+    const studentDataList = getStudents();
     return (
       <div>
         <header>
@@ -29,35 +31,15 @@ class Instructor extends React.Component {
           </nav>
 
           <div className="cardlist">
-            <StudentCard />
-            <StudentCard />
-            <StudentCard />
+            {studentDataList.map((student) => (
+              <StudentCard
+                name={student.name}
+                lessons={student.lessonList}
+                key={student.id}
+              />
+            ))}
           </div>
         </section>
-      </div>
-    );
-  }
-}
-
-/**
- * 학생 목록 카드
- */
-class StudentCard extends React.Component {
-  /**
-   *
-   * @return {JSX.Element}
-   */
-  render(): JSX.Element {
-    const studentName = '유승헌';
-    const remainedLessons = 10;
-    return (
-      <div className="studentcard">
-        <div className="studentcardlabel">
-          <label className="studentName">{studentName}</label>
-          <label className="remainedLessons">
-            남은 수업 횟수: {remainedLessons} 회
-          </label>
-        </div>
       </div>
     );
   }

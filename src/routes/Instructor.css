@@ -17,7 +17,7 @@ header{
 	display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  min-height:92vh;
+  min-height:91vh;
   
 	/* display: inline-flex; */
 }
@@ -26,35 +26,4 @@ header{
   flex-direction: column;
   padding-top:0.5rem;
   
-}
-.studentcard{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-}
-.studentcardlabel{
-  background-color: white;
-  width: 90%;
-  height: 70%;
-  display: grid;
-  grid-template-columns: 20% 25% 47%;
-  grid-gap: 4%;
-}
-.studentName{
-  color:#69702E;
-  font-size:1rem;
-  font-weight:800;
-  grid-column: 1;
-  align-self:center;
-  justify-self: left;
-  padding-left: 20%;
-}
-.remainedLessons{
-  color: #707070;
-  font-size:x-small;
-  grid-column: 2;
-  align-self:center;
-  justify-self: left;
 }

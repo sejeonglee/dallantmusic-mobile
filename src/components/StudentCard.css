@@ -1,0 +1,39 @@
+
+.studentcard{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+}
+.studentcardlabel{
+  background-color: white;
+  width: 90%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 20% 27% 49%;
+  grid-gap: 2%;
+}
+.studentName{
+  color:#69702E;
+  font-size:0.9rem;
+  font-weight:900;
+  grid-column: 1;
+  align-self:center;
+  justify-self: left;
+  padding-left: 20%;    
+}
+.remainedLessons{
+  color: #707070;
+  font-size:x-small;
+  grid-column: 2;
+  align-self:center;
+  justify-self: left;
+}
+.creditMinis{
+  display:flex;
+  flex-direction: row;
+  grid-column: 3;
+  align-self:center;
+  justify-self: left;
+}
