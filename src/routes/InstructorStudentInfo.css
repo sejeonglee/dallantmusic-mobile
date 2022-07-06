@@ -12,6 +12,14 @@ header{
   padding-bottom: 0.3rem;
   color:#f2f2f2;
   min-height:8vh;
+  
+}
+.underline{
+  border-bottom-style:solid;
+  border-bottom-color:#f2f2f2;
+  border-bottom-width:1.5px;
+  width:87%;
+  margin:auto;
 }
 .container {
 	display: flex;

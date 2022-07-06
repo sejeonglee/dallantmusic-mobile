@@ -7,6 +7,7 @@ import Student from './routes/Student';
 import Instructor from './routes/Instructor';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import InstructorStudentInfo from './routes/InstructorStudentInfo';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,6 +15,10 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="instructor" element={<Instructor />} />
+        <Route
+          path="instructor/studentinfo"
+          element={<InstructorStudentInfo />}
+        />
         <Route path="student" element={<Student />} />
 
         <Route

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Instructor.css';
 import StudentCard from '../components/StudentCard';
+import IndicatorTitle from '../components/IndicatorTitle';
 
 import { getStudents } from '../data';
 /**
@@ -22,12 +23,8 @@ class Instructor extends React.Component {
           <text>강사님</text>
         </header>
         <section className="container">
-          <nav
-            style={{
-              backgroundColor: 'white',
-            }}
-          >
-            전체 학생
+          <nav>
+            <IndicatorTitle>전체 학생</IndicatorTitle>
           </nav>
 
           <div className="cardlist">

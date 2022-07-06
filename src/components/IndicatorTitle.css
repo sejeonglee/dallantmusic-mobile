@@ -1,0 +1,22 @@
+.indicatorBar{
+  height:3rem;
+  background-color: white;
+}
+
+.titleBox{
+  margin-left: 7%;
+  padding-top:1rem;
+  width:fit-content;
+  border-bottom-width: 0.1rem;
+  border-bottom-color:#69702E;
+  border-bottom-style: solid;
+  height:100%;
+  color:#5D5D5D;
+  font-weight:900;
+}
+
+/* .titleBg{
+  color:#5D5D5D;
+  width: fit-content;
+  height:98%
+} */

@@ -71,6 +71,25 @@ const students = [
   },
 ];
 
+type StudentInfoDictType = {
+  [index: string]: StudentInfoType;
+};
+
+export type StudentInfoType = {
+  name?: string;
+  phone_number?: string;
+  level?: string;
+  purpose?: string;
+};
+const studentinfo: StudentInfoDictType = {
+  '17': {
+    name: '유승헌',
+    phone_number: '010-4650-8532',
+    level: '전공 중,고,재수생',
+    purpose: '해외 대학원 입학',
+  },
+};
+
 export function getStudents() {
   return students;
 }
@@ -79,3 +98,7 @@ export type Lesson = {
   lessonType: LessonType;
   lessonKey: number;
 };
+
+export function getStudentInfo(studentKey: number): object {
+  return studentinfo[studentKey];
+}
